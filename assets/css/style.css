@@ -1,0 +1,315 @@
+:root{
+
+  --primary:#EA1C24;
+  --primary2:#AC0007;
+  --black:#000;
+  --white:#fff;
+  --grey:#ACACAC;
+  --grey-light:#C7C7C7;
+  --dark:#242424;
+  --dark2:#303030;
+  --reddark:#AC0007;
+}
+
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+#content{
+  background-color: transparent;
+  background-image: 
+  linear-gradient(0deg, transparent 9%,var(--grey) 10%, var(--grey) 12%, transparent 13%),
+  linear-gradient(90deg, transparent 9%,var(--grey) 10%, var(--grey) 12%, transparent 13%);
+  
+  height:100%;
+background-size:30px 30px;
+position: relative;
+}
+
+.main{
+
+  height: 100vh;
+
+}
+
+.undo-redo-tools{
+
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(0,-50%);
+
+}
+
+.undo-redo-tools ul{
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.undo-redo-tools ul li:not(:last-child){
+
+  margin-bottom: 20px;
+
+}
+
+.undo-redo-tools ul li a{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+.undo-redo-tools ul li img{
+
+width: 40px;
+  
+}
+
+.shirt-img{
+
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+height: 100%;
+justify-content: center;
+column-gap: 40px;
+  
+}
+
+.shirt-img img{
+
+width: 350px;
+
+}
+
+.detail-area{
+
+  padding-left: 50px;
+
+}
+
+.costing-head{
+
+  background-color: var(--dark2);
+  color: var(--white);
+  border-bottom-left-radius: 33px;
+  box-shadow:2px 3px 0px 3px var(--reddark);
+  height: 80px;
+  padding-left: 4rem;
+
+}
+
+.costing-head ul{
+
+  list-style: none;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+
+}
+
+.costing-head ul li{
+
+  font-weight: 500;
+
+}
+
+.costing-head ul li span{
+
+  font-size: 25px;
+
+}
+
+.tools-wrapper{
+  
+  padding-right: 50px;
+  margin-top: 2.5rem;
+}
+
+.tools{
+
+  list-style: none;
+  padding: 0;
+  display: flex;
+  border: 1px solid var(--grey);
+  border-radius: 10px;
+  margin-bottom: 0;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.tools li{
+
+  text-align: center;
+  cursor: pointer;
+  flex-basis: 20%;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.tools li:not(:last-child){
+
+  border-right: 1px solid var(--grey);
+
+  
+}
+
+.tools li:hover svg{
+
+  fill:var(--primary);
+
+  
+}
+
+.tools li svg{
+
+  width: 35px;
+  height: 35px;
+}
+.tools li p{
+
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 10px;
+
+}
+
+.tools-total{
+
+  color: var(--white);
+  background-image:linear-gradient(90deg,var(--primary),var(--primary2)) ;
+
+}
+
+.tools-total span{
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 38px;
+
+}
+.tools-total span img{
+
+  width: 25px;
+
+}
+
+.tools-total p{
+  
+  margin-top: 0 !important;
+
+}
+
+.customizer-footer{
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--white);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 80px;
+  box-shadow: 0px 3px 8px 0px #555;
+
+}
+
+.customizer-footer a:first-child{
+
+  color: var(--black);
+  font-size: 20px;
+
+}
+
+.customizer-footer a:last-child{
+
+  color: var(--black);
+  background-image:linear-gradient(90deg,var(--primary),var(--primary2));
+  color: var(--white);
+  padding: 15px 40px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 20px;
+
+
+}
+
+.edit-wrapper{
+
+  border: 1px solid var(--grey);
+  border-radius: 10px;
+  padding:0 2rem;
+  margin-top: 1.5rem;
+
+}
+
+.edit-product{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  border-bottom: 1px solid var(--grey-light);
+  padding: 2rem 0;
+}
+
+.edit-product span{
+
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+
+}
+
+.edit-product span h4{
+
+  font-size: 17px;
+  margin: 0;
+ color: var(--black);
+
+}
+
+.edit-product span p{
+
+  font-size: 15px;
+  margin: 0;
+ color: var(--grey);
+
+}
+
+
+.edit-product span div{
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.edit-product .fa-solid{
+
+  color: var(--black);
+
+}
